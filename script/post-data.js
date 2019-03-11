@@ -8,7 +8,6 @@ function post() {
     var number = document.getElementById("number").value;
     var date = document.getElementById("date").value;
     var comments = document.getElementById("comments").value;
-
     if(firstname && lastname && email && phone && address1 && address2 && number && date || comments) {
         $.ajax( {
             type: 'post',
@@ -28,7 +27,6 @@ function post() {
 	            document.getElementById("status").innerHTML="Form submitted successfully";
             }
         });
-
     }
     document.getElementById("myForm").reset();
     return false;

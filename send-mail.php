@@ -19,7 +19,6 @@ $msg =
 "Number of rooms: ".$number."\r\n".
 "Moving date: ".$date."\r\n".
 "Any additional details: ".$comments;
-
 if(isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['user_email']) && isset($_POST['user_phone']) && isset($_POST['user_address1']) && isset($_POST['user_address2']) && isset($_POST['user_number']) && isset($_POST['user_date']) && isset($_POST['user_comments'])) {
     mail( "$admin", "Requested date: ".$date, $msg, "From: ".$email);
 }
