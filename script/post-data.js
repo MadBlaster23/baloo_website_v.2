@@ -24,7 +24,11 @@ function post() {
                 user_comments:comments
             },
             success: function (response) {
-	            document.getElementById("status").innerHTML="Form submitted successfully";
+	            swal(
+                    'Thank you!',
+                    'Form submitted successfully',
+                    'success'
+                )
             }
         });
     }
