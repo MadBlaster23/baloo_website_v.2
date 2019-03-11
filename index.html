@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<link type="text/css" media="screen" rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="script/datepicker.js"></script>
-    <script type="text/javascript" src="script/email-validation.js"></script>
+    <!-- <script type="text/javascript" src="script/email-validation.js">onsubmit="return ValidateEmail(document.form.email)"</script> -->
+    <script type="text/javascript" src="script/post-data.js"></script>
 </head>
 <body>
     <div class="static">
@@ -48,7 +50,7 @@
     </div>
     <div id="booking">
         <p>BOOK NOW / GET A QUOTE</p>
-        <form name="form" method="post" action="send-mail.php" onsubmit="return ValidateEmail(document.form.email)">
+        <form name="form" method="post" id="myForm" action="" onsubmit="return post();">
             <div class="row1">
                 <div class="column1">
                     <input type="text" id="firstname" name="firstname" placeholder="First name *" required>
@@ -91,10 +93,11 @@
             <div class="row1">
                 <div class="column3">
                     <textarea id="comments" name="comments" placeholder="Any additional details" maxlength="500"></textarea>
-	                <input type="submit" value="Submit">
+	                <input type="submit" id="submit" value="Submit">
 	            </div>
             </div>
         </form>
+        <div id="status"></div>
     </div>
     <footer>
         <div class="row2">
