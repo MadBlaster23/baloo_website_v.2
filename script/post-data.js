@@ -25,7 +25,7 @@ function post() {
                 user_comments:comments
             },
             success: function (response) {
-	            document.getElementById("status").innerHTML="Form Submitted Successfully";
+	            document.getElementById("status").innerHTML="Form submitted successfully";
             }
         });
 
