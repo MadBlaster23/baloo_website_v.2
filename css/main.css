@@ -223,3 +223,7 @@ form {
         margin-top: 0;
     }
 }
+#status {
+    width: 100%;
+    color: #303030;
+}
