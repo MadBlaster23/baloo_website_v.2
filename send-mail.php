@@ -1,5 +1,5 @@
 <?php
-$admin = "contact@baloomoving.com";
+$admin = "evgeniusness@gmail.com";
 $firstname = $_REQUEST['first_name'];
 $lastname = $_REQUEST['last_name'];
 $email = $_REQUEST['user_email'];
