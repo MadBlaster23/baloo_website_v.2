@@ -1,8 +1,8 @@
 <?php
 $admin = "contact@baloomoving.com";
-$index_page = "testful.html";
-$error_page = "error-message-testful.html";
-$thankyou_page = "thank-you-testful.html";
+$index_page = "index.html";
+$error_page = "error-message.html";
+$thankyou_page = "thank-you.html";
 $firstname = $_REQUEST['firstname'];
 $lastname = $_REQUEST['lastname'];
 $email = $_REQUEST['email'];
